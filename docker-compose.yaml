@@ -9,6 +9,8 @@ services:
       - langgraph_demo_db
     environment:
       - DATABASE_URL=postgresql://langgraph_demo:langgraph_demo@langgraph_demo_db:5432/postgres
+      - X_API_KEY=${X_API_KEY}
+      - OPENAI_API_KEY=${OPENAI_API_KEY}
     networks:
       - langgraph_network
 
